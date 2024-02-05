@@ -1,0 +1,15 @@
+<div class="card mb-2 text-centert bg-dark">
+
+  <shared-lazy-image
+    [url]="gift.images.downsized_medium.url"
+    [alt]="gift.title || 'No title' "
+  ></shared-lazy-image>
+<!--
+  <img class="card-img-top"
+  [src]="gift.images.downsized_medium.url"
+  [alt]="gift.title"> -->
+
+  <div class="card-body text-white">
+    <p class="card-text"> {{gift.title || 'notitle' }} </p>
+  </div>
+</div>
